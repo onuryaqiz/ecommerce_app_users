@@ -7,6 +7,7 @@ class Styles {
       {required bool isDarkTheme, required BuildContext context}) {
     return ThemeData(
       scaffoldBackgroundColor: isDarkTheme? AppColors.darkScaffoldColor : AppColors.lightScaffoldColor,
+      brightness:isDarkTheme?Brightness.dark:Brightness.light //ekranı temeya göre ayarladık.
     );
   }
 }

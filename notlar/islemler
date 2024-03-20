@@ -1,0 +1,11 @@
+1- Önce consts diye bir klasör oluşturduk ve theme_data.dart isminde dart dosyası ekledik. Burada scaffold ana ekran teması için renk tanımlamaları yaptık.
+2- Main.dart içerisinde MaterialApp altında theme kısmında Styles.themeData içerisinde themeData tanımlamaları yaptık.
+3- Sonra pub.dev web sayfasına gidip oradan provider ve shared_preferences paketlerini indireceğimiz isimlendirmeleri öğrendik.
+4- const klasörü içerisinde renk tanımlamaları gerçekleştirdik.
+5- lib altına providers adında klasör tanımladık ve burada tema değişikliğinde gerçekleşecek metodları yazdık. setDarkTheme ve getTheme
+6- setDarkTheme metodu shared_preferences ile temayı oluşturmamızı sağladı.
+7- getTheme metodu ise uygualama açılıp kapandığında değişikliği algılayıp, var olan temayı tekrar ekrana kalıcı bir şekilde göstermeyi sağladı. 
+   bunu da shared_preferences ile yaptık.
+   notifyListener kullanmasaydık değişikliği göremeyecektik. Kullanmayı unutmamalıyız.
+8- home_screen içerisinde themeProvider tanımladık. Ve SwitchListTile widget içerisinde, Text ile hangi temeya geçiş yaptığımızı görmüş olduk.
+
